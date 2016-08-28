@@ -75,11 +75,13 @@
     <OutDir>$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <TargetExt>.dll</TargetExt>
+    <LibraryPath>$(SolutionDir)..\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>yara</TargetName>
     <OutDir>$(Configuration)\</OutDir>
     <TargetExt>.dll</TargetExt>
+    <LibraryPath>$(SolutionDir)..\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
